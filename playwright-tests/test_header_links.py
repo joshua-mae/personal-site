@@ -7,7 +7,7 @@ def test_header_links():
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
         page.goto('http://joshuamae.com')
-        page.get_by_role("link", name="Github").click()
+        page.get_by_role("link", name="GitHub").click()
         page.wait_for_load_state()
         expect(page).to_have_url("https://github.com/joshua-mae")
         browser.close()
