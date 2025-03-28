@@ -5,7 +5,7 @@ def test_first_load():
     with sync_playwright() as p:
         browser = p.chromium.launch()
         page = browser.new_page()
-        page.goto('http://joshuamae.com')
+        page.goto('https://www.joshuamae.com')
         assert page.title() == 'Joshua Mae'
         browser.close()
 
