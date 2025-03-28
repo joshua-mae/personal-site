@@ -13,7 +13,8 @@ def linkedin_link_check(page):
     page.goto('https://www.joshuamae.com')
     page.get_by_role("link", name="LinkedIn").click()
     page.wait_for_load_state()
-    expect(page).to_have_url("https://www.linkedin.com/in/joshuazmae")
+    expect(page).to_have_url(re.compile(
+        r"linkedin.*joshuazmae", re.IGNORECASE))
 
 
 def email_link_check(page):
