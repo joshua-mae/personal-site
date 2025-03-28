@@ -19,7 +19,7 @@ def linkedin_link_check(page):
 
 def email_link_check(page):
     page.goto('https://www.joshuamae.com')
-    expect(page.get_by_text("Contact Me")).to_have_attribute(
+    expect(page.get_by_role("link", name="Contact Me")).to_have_attribute(
         'href', re.compile(r"^mailto:.+"))
 
 
