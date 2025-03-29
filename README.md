@@ -1,8 +1,12 @@
-# Joshua Mae's personal website
+# Joshua Mae's Personal Website
 
 This is my personal website that I deployed using Cloudflare pages.
 
 ## Technology
 
-- HTML, CSS, and JavaScript
-- pytest and playwright
+- HTML
+- CSS
+- JavaScript
+- Three.js
+- pytest
+- playwright
