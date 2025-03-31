@@ -1,0 +1,5 @@
+# joshuamae.com robots.txt
+
+user-agent: *
+
+sitemap: https://www.joshuamae.com/sitemap.xml
