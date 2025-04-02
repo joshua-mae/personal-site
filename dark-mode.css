@@ -17,10 +17,6 @@ body {
   color: black;
 }
 
-.logo a:visited {
-  color: black;
-}
-
 .sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -65,7 +61,6 @@ nav ul {
   content: "";
   position: absolute;
   bottom: 10px;
-  /* 10 for regular nav bar and 0 for hamburger icon */
   left: 30px;
   width: calc(100% - 60px);
   height: 2px;
@@ -146,40 +141,12 @@ nav ul {
   margin: 0 auto;
 }
 
-.about-me h1 {
-  margin-bottom: 20px;
-  margin-right: 50px;
-  margin-left: 50px;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  word-break: break-word;
-  hyphens: auto;
-
-  font-size: 32px;
-  animation-duration: 2s;
-  animation-name: slide-in;
-}
-
 .about-me h2 {
-  font-size: 20px;
-  margin-right: 50px;
-  margin-left: 50px;
-  line-height: 1.6;
-  font-weight: normal;
-  animation-duration: 4s;
-  animation-name: slide-in;
+  margin-bottom: 20px;
+  font-size: 35px;
 }
 
-@keyframes slide-in {
-  from {
-    translate: 150vw 0;
-    scale: 1% 1;
-  }
-
-  to {
-    translate: 0 0;
-    scale: 100% 1;
-  }
+.about-me p {
+  font-size: 18px;
+  line-height: 1.6;
 }

@@ -36,8 +36,10 @@ if (WebGL.isWebGL2Available()) {
     })
   );
 
+  // Needs light source for dark mode
+
   waves.rotation.x = -Math.PI / 2;
-  waves.position.y = 0.6;
+  waves.position.y = 0.4;
   scene.add(waves);
 
   function animationLoop(t) {
