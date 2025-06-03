@@ -31,10 +31,10 @@ checkbox.addEventListener("change", () => {
   if (checkbox.checked) {
     themeLink.href = "dark-mode.css";
     localStorage.setItem("theme", "dark");
-    modeLabel.textContent = "Dark Mode";
+    modeLabel.textContent = "Light Mode";
   } else {
     themeLink.href = "main.css";
     localStorage.setItem("theme", "light");
-    modeLabel.textContent = "Light Mode";
+    modeLabel.textContent = "Dark Mode";
   }
 });
