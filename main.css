@@ -26,10 +26,6 @@ body {
   gap: 15px;
 }
 
-.icons svg path {
-  fill: white;
-}
-
 .theme-switch-wrapper {
   display: flex;
   align-items: center;

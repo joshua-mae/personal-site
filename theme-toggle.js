@@ -11,19 +11,19 @@ if (!savedTheme) {
     themeLink.href = "dark-mode.css";
     document.body.classList.add("dark-mode");
     checkbox.checked = true;
-    modeLabel.textContent = "Dark Mode";
+    modeLabel.textContent = "Switch to Dark Mode";
   } else {
     themeLink.href = "main.css";
-    modeLabel.textContent = "Light Mode";
+    modeLabel.textContent = "Switch to Light Mode";
   }
 } else {
   if (savedTheme === "dark") {
     themeLink.href = "dark-mode.css";
     checkbox.checked = true;
-    modeLabel.textContent = "Dark Mode";
+    modeLabel.textContent = "Switch to Dark Mode";
   } else {
     themeLink.href = "main.css";
-    modeLabel.textContent = "Light Mode";
+    modeLabel.textContent = "Switch to Light Mode";
   }
 }
 
@@ -31,10 +31,10 @@ checkbox.addEventListener("change", () => {
   if (checkbox.checked) {
     themeLink.href = "dark-mode.css";
     localStorage.setItem("theme", "dark");
-    modeLabel.textContent = "Light Mode";
+    modeLabel.textContent = "Switch to Light Mode";
   } else {
     themeLink.href = "main.css";
     localStorage.setItem("theme", "light");
-    modeLabel.textContent = "Dark Mode";
+    modeLabel.textContent = "Switch to Dark Mode";
   }
 });
