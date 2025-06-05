@@ -11,10 +11,10 @@ if (!savedTheme) {
     themeLink.href = "dark-mode.css";
     document.body.classList.add("dark-mode");
     checkbox.checked = true;
-    modeLabel.textContent = "Switch to Dark Mode";
+    modeLabel.textContent = "Switch to Light Mode";
   } else {
     themeLink.href = "main.css";
-    modeLabel.textContent = "Switch to Light Mode";
+    modeLabel.textContent = "Switch to Dark Mode";
   }
 } else {
   if (savedTheme === "dark") {
