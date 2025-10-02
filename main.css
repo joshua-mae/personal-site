@@ -75,12 +75,3 @@ body {
 input:checked + .slider {
   background-color: #4caf50;
 }
-
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
-
-html {
-    visibility: visible;
-    opacity: 1;
-}
